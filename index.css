@@ -434,10 +434,9 @@ body{
       position: relative;
       width:100%;
       height:30%;
-
     }
     .nav2{
-      position: fied;
+      position: fixed;
       width:100%;
       height:100%;
     }
