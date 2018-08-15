@@ -1,0 +1,463 @@
+*{
+  list-style: none;
+  letter-spacing: 0.4px;
+}
+body{
+  background-color: #f2f2f2;
+}
+.container-fluid{
+  height:100%;
+  position: relative;
+}
+
+#nav,#content{
+  padding-left:0px;
+  padding-right:0px;
+}
+#content{
+  position:absolute;
+  right:0px;
+  top:0px;
+}
+#nav{
+  display: block;
+  background:white;
+  height: 100%;
+  position: fixed;
+  left:0px;
+  top:0px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.12);
+}
+.nav1{
+  z-index:1;
+  opacity: 1;
+  transition: opacity 0.5s linear;
+}
+.nav2{
+  opacity: 0;
+  transition: opacity 0.5s linear;
+  overflow:scroll;
+}
+/*  iphone:w<768px  */
+@media screen and (max-width: 768px){
+    #nav{
+      background: blue;
+      position: fixed;
+      left:0px;
+      top:auto;
+      bottom:0px;
+      width:100%;
+      height:20%;
+    }
+    #content{
+      position: relative;
+      width: 100%;
+    }
+}
+/*pad: w >= 768  && w< 992*/
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    #nav{
+      background: yellow;
+      position: relative;
+      width:100%;
+      height:30%;
+    }
+    #headbody{
+      margin-top:-24px;
+      padding-bottom: 12px;
+    }
+    #content{
+      position: relative;
+      width: 100%;
+    }
+    #bannerdiv{
+      margin-top:104px;
+    }
+}
+/*中等屏幕   w >= 992  && w<1200*/
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+    #nav{
+      position: fixed;
+      left:0px;
+      top:0px;
+      height: 100%;
+    }
+
+    #content{
+      position:absolute;
+      right:0px;
+      top:0px;
+    }
+}
+/* 菜单栏  */
+#navbar{
+  padding:24px;
+  border:0px;
+  background: white;
+}
+#navbar #navheader{
+  height: 40px;
+  padding:8px;
+}
+#navbar #navbody ul li a{
+  font-weight:600;
+  font-size:16px;
+  color:#999;
+  color:#000;
+}
+#navbar #imgbtn1,#imgbtn2{
+  padding:12px;
+  float:right;
+}
+#headbody{
+  line-height:46px;
+  width:100%;
+  background: white;
+  text-align: center;
+}
+#headbody:before{
+  content: '';
+  display: inline-block;
+  height: 70%;
+  vertical-align: middle;
+}
+#headbody #body-content{
+  display: inline-block;
+  vertical-align: middle;
+  width: 55%;
+}
+#headbody #bodybrand{
+  font-size:28px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  color:#000;
+}
+#bodybtn button{
+  margin:0 12px;
+  margin-bottom: 12px;
+  color: rgb(54, 165, 112);
+  font-size: 16px;
+  border-radius:20px;
+  border-color: rgb(54, 165, 112);
+}
+/*隐藏的nav */
+#headbody2{
+  padding-left:84px;
+  padding-right:24px;
+  margin-top:-24px;
+
+}
+#headbody2 ul li a{
+  color:#212121;
+  font-size:120%;
+  line-height:100%;
+  font-weight: bold;
+}
+#headfooter{
+  color:#9E9E9E;
+  font-size: 12px;
+}
+.footer_link a{
+  color:#9E9E9E;
+}
+#headfooter .footer_bottom{
+  width:180px;
+}
+#headfooter .footer_bottom span{
+  font-size: 8px;
+}
+/*右边  */
+#bannerdiv{
+  position: relative;
+}
+#ad{
+  position: absolute;
+  top:10px;
+  right:10px;
+  z-index:100;
+  opacity: 0.8;
+}
+#bannerdiv2{
+  padding:24px 12px;
+}
+#bannerdiv2 a img{
+  width:100%;
+  height:auto;
+  position:relative;
+  top:0px;
+  left:0px;
+  transition:transform is ease-in-out;
+  transition-duration: 0.5s;
+  -webkit-transform:translate(0px,0px);
+  -ms-transform:translate(0px,0px);
+  -moz-transform:translate(0px,0px);
+  -o-transform:translate(0px,0px);
+}
+#bannerdiv2 a img:hover{
+  transition:transform is ease-in-out;
+  transition-duration: 0.5s;
+  -webkit-transform:translate(0px,-5px);
+  -ms-transform:translate(0px,-5px);
+  -moz-transform:translate(0px,-5px);
+  -o-transform:translate(0px,-5px);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.12);
+}
+#bannerdiv3{
+  width:100%;
+  height:200px;
+  background-color: white;
+}
+#bg-banner{
+
+  width: 78%;
+  height: 100%;
+  margin:12px auto;
+  position: relative;
+}
+#bg-banner #bg-body{
+  width:50%;
+  height:100%;
+  float:left;
+  text-align: left;
+}
+#bg-body::after{
+  clear:both;
+}
+#bg-body h4{
+  font-weight: 400;
+  color:#000;
+}
+#bg-body p{
+  line-height: 30px;
+  color:#666;
+  margin-right:24px;
+}
+#bg-body p a{
+  color:#C2A661;
+}
+#bg-btn{
+  margin-top:24px;
+}
+#bg-btn button{
+  margin:0 4px;
+  color: rgb(54, 165, 112);
+  font-size: 16px;
+  border-radius:20px;
+  border-color: rgb(54, 165, 112);
+}
+
+#bg-banner #bg-image{
+  width:50%;
+  height:176px;
+  float:left;
+  display: table;
+}
+
+#bg-image::after{
+  clear:both;
+}
+#bg-image div{
+  width: 100%;
+  height: auto;
+  display: table-cell;
+  vertical-align: middle;
+}
+#bg-image div img{
+  height: 72px;
+  width:80%;
+  float: right;
+}
+#bannerdiv4{
+  width:100%;
+  height: 416px;
+}
+#shop{
+  margin:10px 12px;
+  height:calc(100% - 20px);
+  text-align: center;
+}
+#shop h3{
+  color:#000;
+  line-height: 50px;
+}
+#shop #shop_title{
+  line-height: 30px;
+  font-size: 16px;
+  color: #666;
+
+}
+#shop{
+  margin:0px;
+}
+#shop ul{
+  padding:0px;
+  margin-top:60px;
+  text-align:center;
+}
+#shop ul li{
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+  display:inline-block;
+  margin:0 2px;
+  height: 198px;
+  width: 162px;
+  background: white;
+  position: relative;
+  top:0px;
+  left:0px;
+  transition:transform is ease-in-out;
+  transition-duration: 0.5s;
+  -webkit-transform:translate(0px,0px);
+  -ms-transform:translate(0px,0px);
+  -moz-transform:translate(0px,0px);
+  -o-transform:translate(0px,0px);
+}
+#shop ul li:hover{
+  transition:transform is ease-in-out;
+  transition-duration: 0.5s;
+  -webkit-transform:translate(0px,-8px);
+  -ms-transform:translate(0px,-8px);
+  -moz-transform:translate(0px,-8px);
+  -o-transform:translate(0px,-8px);
+  box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.12);
+}
+#shop ul li a{
+  color:#666;
+}
+#shop ul li a img{
+  display:block;
+  height: 72px;
+  z-index: 99;
+  margin:0 auto;
+  margin-top:-36px;
+
+}
+#shop ul li a strong{
+  font-weight:400;
+  color: #000;
+  line-height: 20px;
+  font-size: 16px;
+  display: inline-block;
+  margin-top:10px;
+}
+#shop ul li a p{
+  line-height: 20px;
+  font-size: 12px;
+}
+#shop_link{
+  margin-top:26px;
+  color:#887035
+}
+
+/* scroll   */
+#bannerdiv5{
+  width: 100%;
+  background: #FDFDFD;
+  height:450px;
+  text-align: center;
+  padding:24px 0;
+}
+#bannerdiv5 h3{
+  color:#000;
+  line-height: 50px;
+}
+#bannerdiv5 p{
+  line-height: 30px;
+  font-size: 16px;
+  color: #666;
+}
+#scrollbox{
+  margin-top:30px;
+  height:210px;
+  width:100%;
+  position: relative;
+}
+#scrollbox #sleft_btn{
+  position: absolute;
+  left:30px;
+  top:50%;
+  z-index: 1;
+  width:28px;
+  height:28px;
+  background: white;
+  border-radius:50%;
+  display: block;
+}
+#scrollbox #sleft_btn img{
+  margin-top:4px;
+}
+#scrollbox #sright_btn{
+  position: absolute;
+  right:30px;
+  top:50%;
+  z-index: 1;
+  width:28px;
+  height:28px;
+  background: white;
+  border-radius:50%;
+  display: block;
+}
+#scrollbox #sright_btn img{
+  margin-top:4px;
+}
+#scrollbox #sbox{
+  width:100%;
+  height:210px;
+  overflow: hidden;
+}
+#autoplay{
+  position: absolute;
+  left:0px;
+  top:0px;
+}
+#sbox ul li{
+  width:290px;
+  height:210px;
+  float:left;
+  margin-right:14px;
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.12);
+  cursor: hand;
+  position: relative;
+  left:0px;
+  top:0px;
+  transition: transform is ease-in-out;
+  transition-duration: 0.5s
+  -webkit-transform:translate(0px,0px);
+  -o-transform:translate(0px,0px);
+  -moz-transform:translate(0px,0px);
+  -ms-transform:translate(0px,0px);
+}
+#sbox ul li:hover{
+  transition:transform is ease-in-out;
+  transition-duration: 0.5s;
+  -webkit-transform:translate(0px,-8px);
+  -o-transform:translate(0px,-8px);
+  -moz-transform:translate(0px,-8px);
+  -ms-transform:translate(0px,-8px);
+  box-shadow:0 1px 3px 3px rgba(0, 0, 0, 0.12);
+}
+#sbox ul li div{
+  height:150px;
+  background-position:center center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  overflow: hidden;
+}
+#sbox ul li span{
+  display: inline-block;
+  width:80px;
+  height:32px;
+  background:#C2A661;
+  line-height:32px;
+  position: absolute;
+  left:0px;
+  top:5%;
+  color:white;
+}
+#sbox ul li p{
+  line-height:60px;
+  font-size:16px;
+  color:#000;
+  text-align: left;
+  padding-left:24px;
+}

@@ -1,0 +1,255 @@
+<html>
+<head>
+  <meta charset="utf-8" content="text/html" />
+  <title>星巴克</title>
+  <link href="bootstrap-3.3.7/css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+  <link href="index.css" type="text/css" rel="stylesheet" />
+  <script src="bootstrap-3.3.7/jquery-3.2.1.min.js" type="text/javascript"></script>
+  <script src="bootstrap-3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="index.js" type="text/javascript"></script>
+
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!--导航-->
+      <!--显示的nav -->
+      <div class="col-sm-4 nav1" id="nav">
+        <div id="navdiv">
+          <nav class="navbar navbar-default" role="navigation" id="navbar">
+              <div class="navbar-header col-sm-2" id="navheader">
+                <a href="#"><img src="img/inner_artwork.svg" width="36" height="36"/></a>
+              </div>
+              <div id="navbody">
+                <ul class="nav navbar-nav">
+                  <li><a href="#">门店</a></li>
+                  <li><a href="#">我的账户</a></li>
+                  <li><a href="#">菜单</a></li>
+                </ul>
+              </div>
+              <div id="imgbtn1" >
+                <a><img src="img/icon_Hamburger.svg" width="24" heigth="24"/></a>
+              </div>
+          </nav>
+        </div>
+        <div id="headbody">
+          <div id="body-content">
+            <span id="bodybrand">心情惬意，来杯咖啡吧 ☕</span>
+            <div id="bodybtn">
+              <button type="button" class="btn btn-default">
+                <span>登录</span>
+              </button>
+              <button type="button" class="btn btn-default">
+                <span>注册</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--隐藏的nav  -->
+      <div class="col-sm-4 nav2" id="nav">
+        <div id="navdiv">
+          <nav class="navbar navbar-default" role="navigation" id="navbar">
+              <div class="navbar-header col-sm-2" id="navheader">
+                <a href="#"><img src="img/inner_artwork.svg" width="36" height="36"/></a>
+              </div>
+              <div id="imgbtn2">
+                  <a><img src="img/close.svg" width="24" heigth="24"/></a>
+              </div>
+          </nav>
+        </div>
+        <div id="headbody2">
+          <ul class="nav nav-stacked">
+            <li><a href="#">门店</a></li>
+            <li><a href="#">星享俱乐部</a></li>
+            <li><a href="#">菜单</a></li>
+            <hr  />
+            <li><a href="#">星巴克移动应用</a></li>
+            <li><a href="#">星礼卡</a></li>
+            <li><a href="#">关于星巴克臻选™</a></li>
+            <li><a href="#">咖啡星讲堂</a></li>
+            <li><a href="#">上海烘焙工坊</a></li>
+            <li><a href="#">关于星巴克</a></li>
+            <li><a href="#">帮助中心</a></li>
+            <hr  />
+          </ul>
+          <div id="bodybtn">
+            <button type="button" class="btn btn-default">
+              <span>登录</span>
+            </button>
+            <button type="button" class="btn btn-default">
+              <span>注册</span>
+            </button>
+          </div>
+          <div class="container" id="headfooter">
+            <div class="footer_link">
+              <a href="#">English</a> |
+              <a href="#">隐私政策</a> |
+              <a href="#">使用条款</a>
+            </div>
+            <div class="footer_bottom">
+                <img src="img/icpicon.png" width="10" />
+                <span>沪公网安备 31010402000318号</span>  |
+                <span>沪ICP备1700374</span>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <!--内容-->
+      <div class="col-sm-8" id="content">
+
+        <div id="bannerdiv">
+          <!--轮播-->
+          <div id="mycarousel" class="carousel slide" data-ride="carousel">
+            <!--轮播图片-->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="img/1.jpg" alt="星巴克"/>
+              </div>
+              <div class="item">
+                <img src="img/2.jpg" alt="星巴克"/>
+              </div>
+              <div class="item">
+                <img src="img/3.jpg" alt="星巴克"/>
+              </div>
+            </div>
+            <a class="carousel-control right" href="#mycarousel" data-slide="next">
+              <span _ngcontent-c3="" aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+          </div>
+          <!--广告 -->
+          <div id="ad">
+            <span class="label label-default">广告</span>
+          </div>
+        </div>
+        <!--banner2 -->
+          <div id="bannerdiv2">
+            <div id="banner-container" class="row">
+                <div class="col-sm-4">
+                  <a href="#"><img src="img/b1.jpg" class="img-responsive"/></a>
+                </div>
+                <div class="col-sm-4">
+                  <a href="#"><img src="img/b2.jpg" class="img-responsive"/></a>
+                </div>
+                <div class="col-sm-4">
+                  <a href="#"><img src="img/b3.jpg" class="img-responsive"/></a>
+                </div>
+            </div>
+          </div>
+          <div id="bannerdiv3">
+            <div id="bg-banner" class="wrapper">
+              <div id="bg-body">
+                <h2>星享俱乐部</h2>
+                <p>开启您的星享之旅，星星越多、会员等级越高、好礼越丰富。<a href="#">了解更多 ›</a></p>
+                <div id="bg-btn">
+                  <button type="button" class="btn btn-default">
+                    <span style="color: rgb(54, 165, 112); font-size: 16px;">登录</span>
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    <span style="color: rgb(54, 165, 112); font-size: 16px;">注册</span>
+                  </button>
+                </div>
+              </div>
+              <div id="bg-image">
+                <div>
+                  <img src="img/logo-msr.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="bannerdiv4">
+            <div id="shop">
+              <h3>星巴克精选</h3>
+              <p id="shop_title">在星巴克天猫旗舰店发现更多咖啡心意</p>
+              <ul>
+                <li>
+                  <a href="#">
+                    <img src="img/tmall-card-01.png" />
+                    <p>
+                      <strong>星享卡</strong>
+                    </p>
+                    <p>
+                      开始您的<br />星巴克专属之旅
+                    </p>
+                    <p id="shop_link">了解更多 > </p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="img/tmall-card-02.png" />
+                    <p>
+                      <strong>星享卡</strong>
+                    </p>
+                    <p>
+                      开始您的<br />星巴克专属之旅
+                    </p>
+                    <p id="shop_link">了解更多 > </p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="img/tmall-eticket.png" />
+                    <p>
+                      <strong>星享卡</strong>
+                    </p>
+                    <p>
+                      开始您的<br />星巴克专属之旅
+                    </p>
+                    <p id="shop_link">了解更多 > </p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="img/tmall-reserve.png" />
+                    <p>
+                      <strong>星享卡</strong>
+                    </p>
+                    <p>
+                      开始您的<br />星巴克专属之旅
+                    </p>
+                    <p id="shop_link">了解更多 > </p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="bannerdiv5">
+            <h3>1912 派克街 | 咖啡星讲堂</h3>
+            <p>了解更多星巴克咖啡文化</p>
+            <div id="scrollbox">
+              <span id="sleft_btn"><img src="img/icon-scroll-left.svg" width="18" /></span>
+              <span id="sright_btn"><img src="img/icon-scroll-right.svg" width="18" /></span>
+              <div id="sbox">
+                <ul id="autoplay">
+                  <li>
+                      <div style="background-image:url(img/s1.jpg)"></div>
+                        <span>咖啡知识</span>
+                        <p>咖啡的起源和培植</p>
+                  </li>
+                  <li>
+                      <div style="background-image:url(img/s2.jpg)"></div>
+                        <span>咖啡品鉴</span>
+                        <p>咖啡调制</p>
+                  </li>
+                  <li>
+                      <div style="background-image:url(img/s3.jpg)"></div>
+                        <span>咖啡知识</span>
+                        <p>咖啡烘焙</p>
+                  </li>
+                  <li>
+                      <div style="background-image:url(img/s4.jpg)"></div>
+                        <span>咖啡知识</span>
+                        <p>手冲咖啡</p>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
