@@ -71,7 +71,7 @@ body{
   vertical-align: middle;
   width: 55%;
 }
-.headbody #bodybrand{
+#bodybrand{
   font-size:28px;
   font-weight: 800;
   letter-spacing: 0.4px;
@@ -407,17 +407,108 @@ body{
   text-align: left;
   padding-left:24px;
 }
+/*移动端样式 */
+.app_menu{
+  display: none;
+  position: fixed;
+  left:0px;
+  bottom:-10px;
+  width: 100%;
+  background: white;
+}
+.app_menu ul{
+  padding: 0 6px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  display: -webkit-flex; /*webkit*/
+
+
+}
+.app_menu ul li{
+  margin:0px;
+  float:left;
+  width:20%;
+}
+.app_menu ul li a{
+  display: block;
+  text-decoration: none;
+  padding: 6px 4px;
+  line-height:1;
+  text-align: center;
+  font-size: 1.2rem;
+  font-size:12px;
+  color:rgba(0, 0, 0, 0.56);
+}
+.icons{
+  display: block;
+  height: 28px;
+  margin-bottom: 3px;
+  position: relative;
+  width: 100%;
+}
+/* 选中的样式 */
+.app_menu ul li .active{
+  color:#00A862;
+}
+.icons .iactive{
+    display: none;
+}
+/*app  */
+.app_top{
+  background: white;
+  border: 1px solid red;
+  width: 100%;
+  height:60px;
+  padding:10px 0;
+  padding-left:20px;
+}
 
 /*  iphone:w<768px  */
 @media screen and (max-width: 768px){
+    /*移动端CSS常规设置    */
+    body {
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif; /*使用无衬线字体*/
+    }
+
+    a, img {
+        -webkit-touch-callout: none; /*禁止长按链接与图片弹出菜单*/
+    }
+
+    html, body {
+        -webkit-user-select: none; /*禁止选中文本*/
+        user-select: none;
+    }
+
+    button,input,optgroup,select,textarea {
+        -webkit-appearance:none; /*去掉webkit默认的表单样式*/
+    }
+
+    a,button,input,optgroup,select,textarea {
+        -webkit-tap-highlight-color:rgba(0,0,0,0); /*去掉a、input和button点击时的蓝色外边框和灰色半透明背景*/
+    }
+
+    input::-webkit-input-placeholder {
+        color:#ccc; /*修改webkit中input的planceholder样式*/
+    }
+
+    input:focus::-webkit-input-placeholder {
+        color:#f00; /*修改webkit中focus状态下input的planceholder样式*/
+    }
+
+    body {
+        -webkit-text-size-adjust: 100%!important; /*禁止IOS调整字体大小*/
+    }
+
+    input::-webkit-input-speech-button {
+        display: none; /*隐藏Android的语音输入按钮*/
+    }
+    /* end */
+    .app_menu{
+      display: block;
+    }
     #nav{
-      background: blue;
-      position: fixed;
-      left:0px;
-      top:auto;
-      bottom:0px;
-      width:100%;
-      height:20%;
+      display:none;
     }
     #content{
       position: relative;
@@ -449,6 +540,7 @@ body{
     }
     #content{
       position: relative;
+      margin-top:-40px;
       width: 100%;
     }
     #bannerdiv{
