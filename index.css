@@ -4,6 +4,7 @@
 }
 body{
   background-color: #f2f2f2;
+
 }
 .container-fluid{
   height:100%;
@@ -215,6 +216,8 @@ body{
 #bannerdiv4{
   width:100%;
   height: 416px;
+  min-width: 719px;
+  width:expression_r(document.body.clientWidth < 719 ? "719px": "auto" ); 
 }
 #shop{
   margin:10px 12px;
