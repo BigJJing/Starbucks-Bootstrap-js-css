@@ -410,7 +410,7 @@ body{
 
 /*  iphone:w<768px  */
 @media screen and (max-width: 768px){
-    .nav1{
+    #nav{
       background: blue;
       position: fixed;
       left:0px;
