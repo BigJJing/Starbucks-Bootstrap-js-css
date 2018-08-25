@@ -4,6 +4,7 @@
 }
 body{
   background-color: #f2f2f2;
+  overflow-x:hidden;
 
 }
 .container-fluid{
@@ -216,12 +217,10 @@ body{
 #bannerdiv4{
   width:100%;
   height: 416px;
-  min-width: 719px;
-  width:expression_r(document.body.clientWidth < 719 ? "719px": "auto" ); 
 }
 #shop{
+  width:100%;
   margin:10px 12px;
-  height:calc(100% - 20px);
   text-align: center;
 }
 #shop h3{
@@ -523,6 +522,19 @@ body{
     }
     #ad{
       opacity: 1;
+    }
+    #bannerdiv4{
+      height: 656px;
+    }
+    #shop ul li{
+      margin:30px 50px;
+      margin-top:10px;
+    }
+    #bg-banner #bg-image{
+      display: none;
+    }
+    #bg-banner #bg-body{
+      width: 100%;
     }
 }
 /*pad: w >= 768  && w< 992*/
